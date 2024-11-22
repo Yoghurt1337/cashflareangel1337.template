@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+#backgroundVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#consentButton {
+    padding: 12px 24px;
+    font-size: 20px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#consentButton:hover {
+    background-color: #ddd;
+}
+
+#profile-card {
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    width: 350px;
+    height: 350px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    background-image: url(/assets/image/hqdefault.jpg);
+    background-size: 400px 550px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#banner {
+    width: 100%;
+    height: 120px;
+    background-color: #111214;
+    margin-bottom: 15px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease, background-image 0.3s ease;
+}
+
+#avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 10%;
+    object-fit: cover;
+    transition: margin-top 0.3s ease;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+}
+
+.gif-avatar {
+    margin-top: 90px;
+    user-select: none;
+}
+
+.gif-banner {
+    background-size: 130%;
+}
+
+.profile-details {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    user-select: none;
+    margin-bottom: 50px;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff !important;
+    user-select: none;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 10px;
+    user-select: none;
+}
+
+#profile-card:hover {
+    transform: translateY(30px);
+    transition: all 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#profile-card {
+    animation: fadeIn 1s ease-out;
+}
+
+.gif-banner {
+    background-size: 130%;
+}
+
+.gif-avatar {
+    margin-top: 90px;
+}
+
+.profile-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    user-select: none;
+    opacity: 0; 
+    transform: translateY(-50px); 
+    transition: transform 0.3s ease, opacity 0.3s ease; 
+}
+
+.profile-links a {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    user-select: none;
+}
+
+.profile-links a:hover {
+    color: #fff;
+}
+
+.profile-links i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+#profile-card:hover .profile-links {
+    opacity: 1;
+    transform: translateY(10px);
+}
