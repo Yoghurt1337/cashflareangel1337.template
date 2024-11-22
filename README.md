@@ -13,3 +13,6 @@ A web-based project that dynamically fetches and displays Discord profile inform
 - A modern browser with JavaScript enabled.
 
 ![image](https://github.com/user-attachments/assets/5e0f1d8b-2127-4487-8723-b9b3d3176e87)
+
+
+[LivePage](https://cash1337-2.vercel.app)
